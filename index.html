@@ -45,7 +45,7 @@ section { display: flex; flex-direction: column; gap: 16px; }
 h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; margin: 0; display: flex; align-items: baseline; gap: 12px; }
 h2 small { font-family: var(--font-body); font-size: 14px; color: var(--muted); }
 
-.videos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 20px; align-items: start; }
+.videos { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; }
 .video { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .frame { width: 100%; max-width: 100%; border-radius: 14px; overflow: hidden; background: #000; }
 .frame iframe { width: 100%; height: 100%; border: 0; display: block; }
@@ -66,7 +66,7 @@ a.card.wide { flex-direction: row; flex-wrap: wrap; align-items: center; justify
 a.card.wide .go { margin-top: 0; align-self: center; }
 
 footer { font-size: 13px; color: var(--muted); }
-@media (max-width: 720px) { .videos { grid-template-columns: minmax(0, 1fr); } .video .v916 { margin: 0 auto; } }
+@media (max-width: 720px) { .video .v916 { margin: 0 auto; } }
 @media (prefers-reduced-motion: reduce) { a.card { transition: none; } a.card:hover { transform: none; } }
 </style>
 </head>
@@ -85,14 +85,14 @@ footer { font-size: 13px; color: var(--muted); }
     <h2 id="h-video">教學動畫 <small>2 支・點畫面播放</small></h2>
     <div class="videos">
       <div class="video">
-        <div class="frame v916"><iframe src="https://www.youtube-nocookie.com/embed/B0Hl-TetiNY?rel=0" title="行前小提醒" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-        <h3>行前小提醒</h3>
-        <p class="meta">直式 9:16・1 分 26 秒・字幕版，可轉傳 LINE</p>
-      </div>
-      <div class="video">
         <div class="frame v169"><iframe src="https://www.youtube-nocookie.com/embed/kd-x6Z06N3Y?rel=0" title="遊戲合輯介紹" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
         <h3>遊戲合輯介紹</h3>
         <p class="meta">橫式 16:9・1 分 56 秒・有旁白，帶活動前先看一遍</p>
+      </div>
+      <div class="video">
+        <div class="frame v916"><iframe src="https://www.youtube-nocookie.com/embed/B0Hl-TetiNY?rel=0" title="行前小提醒" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        <h3>行前小提醒</h3>
+        <p class="meta">直式 9:16・1 分 26 秒・字幕版，可轉傳 LINE</p>
       </div>
     </div>
   </section>
