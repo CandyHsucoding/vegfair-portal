@@ -48,7 +48,8 @@ h2 small { font-family: var(--font-body); font-size: 14px; color: var(--muted); 
 .videos { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; }
 .video { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .frame { width: 100%; max-width: 100%; border-radius: 14px; overflow: hidden; background: #000; }
-.frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.frame video { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
+.meta a { color: var(--accent); }
 .video .v916 { aspect-ratio: 9 / 16; max-width: min(100%, 405px); }
 .video .v169 { aspect-ratio: 16 / 9; }
 .video h3 { margin: 0; font-size: 17px; }
@@ -87,14 +88,14 @@ footer { font-size: 13px; color: var(--muted); }
     <h2 id="h-video">教學動畫 <small>2 支・點畫面播放</small></h2>
     <div class="videos">
       <div class="video">
-        <div class="frame v169"><iframe src="https://www.youtube-nocookie.com/embed/kd-x6Z06N3Y?rel=0" title="遊戲合輯介紹" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        <div class="frame v169"><video src="media/overview.mp4" poster="media/overview.jpg" controls preload="metadata" playsinline title="遊戲合輯介紹"></video></div>
         <h3>遊戲合輯介紹</h3>
-        <p class="meta">橫式 16:9・1 分 56 秒・有旁白，帶活動前先看一遍</p>
+        <p class="meta">橫式 16:9・1 分 56 秒・有旁白，帶活動前先看一遍・<a href="https://youtu.be/kd-x6Z06N3Y" target="_blank" rel="noopener">在 YouTube 開啟</a></p>
       </div>
       <div class="video">
-        <div class="frame v916"><iframe src="https://www.youtube-nocookie.com/embed/B0Hl-TetiNY?rel=0" title="行前小提醒" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        <div class="frame v916"><video src="media/reminders.mp4" poster="media/reminders.jpg" controls preload="metadata" playsinline title="行前小提醒"></video></div>
         <h3>行前小提醒</h3>
-        <p class="meta">直式 9:16・1 分 26 秒・字幕版，可轉傳 LINE</p>
+        <p class="meta">直式 9:16・1 分 26 秒・字幕版，可轉傳 LINE・<a href="https://youtube.com/shorts/B0Hl-TetiNY" target="_blank" rel="noopener">在 YouTube 開啟</a></p>
       </div>
     </div>
   </section>
